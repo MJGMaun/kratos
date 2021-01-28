@@ -4,7 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { LayoutComponent } from './layout.component';
-import { RegisterComponent } from './register/register.component';
+import { HomeRegisterComponent } from './home-register/home-register.component';
 
 
 
@@ -17,8 +17,8 @@ import { RegisterComponent } from './register/register.component';
   ],
   declarations: [
     LayoutComponent,
-    RegisterComponent,
+    HomeRegisterComponent,
   ],
-  bootstrap: [RegisterComponent]
+  bootstrap: []
 })
 export class HomeModule { }

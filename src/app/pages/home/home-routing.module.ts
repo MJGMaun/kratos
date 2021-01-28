@@ -2,13 +2,13 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { LayoutComponent } from './layout.component';
-import { RegisterComponent } from './register/register.component';
+import { HomeRegisterComponent } from './home-register/home-register.component';
 
 const routes: Routes = [
   {
       path: '', component: LayoutComponent,
       children: [
-          { path: 'register', component: RegisterComponent },
+          { path: 'home-register', component: HomeRegisterComponent },
       ]
   }
 ];
