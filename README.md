@@ -1,5 +1,8 @@
-# angular-10-signup-verification-boilerplate
+# Notes
 
-Angular 10 Boilerplate - Email Sign Up with Verification, Authentication & Forgot Password
+- pages
+  -- filename: add pagename before page.
 
-For documentation and a live demo see https://jasonwatmore.com/post/2020/08/29/angular-10-boilerplate-email-sign-up-with-verification-authentication-forgot-password
+
+- component in a page
+  -- file struct: add the component in _component
