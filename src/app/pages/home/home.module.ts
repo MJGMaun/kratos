@@ -5,6 +5,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeRoutingModule } from './home-routing.module';
 import { LayoutComponent } from './layout.component';
 import { HomeRegisterComponent } from './home-register/home-register.component';
+import { HomeMytiComponent } from './home-myti/home-myti.component';
 
 
 
@@ -18,6 +19,7 @@ import { HomeRegisterComponent } from './home-register/home-register.component';
   declarations: [
     LayoutComponent,
     HomeRegisterComponent,
+    HomeMytiComponent,
   ],
   bootstrap: []
 })

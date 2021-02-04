@@ -6,11 +6,15 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 // used to create fake backend
 import { fakeBackendProvider } from './_helpers';
 
+//shared
+import { MaterialModule } from './shared/material/material.module';
+
 import { AppRoutingModule } from './app-routing.module';
 import { JwtInterceptor, ErrorInterceptor, appInitializer } from './_helpers';
 import { AccountService } from './_services';
 import { AppComponent } from './app.component';
-import { AlertComponent } from './_components';
+import { AlertComponent } from './_components';;
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 @NgModule({
     imports: [
         BrowserModule,
@@ -18,6 +22,9 @@ import { AlertComponent } from './_components';
         // ReactiveFormsModule,
         HttpClientModule,
         AppRoutingModule
+,
+        BrowserAnimationsModule,
+        MaterialModule
     ],
     declarations: [
         AppComponent,
