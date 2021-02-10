@@ -1,10 +1,15 @@
-﻿import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
-import { AccountService } from '@app/_services';
+@Component({
+  selector: 'app-dashboard',
+  templateUrl: './dashboard.component.html',
+  styleUrls: ['./dashboard.component.less']
+})
+export class DashboardComponent implements OnInit {
 
-@Component({ templateUrl: 'home.component.html' })
-export class HomeComponent {
-    account = this.accountService.accountValue;
+  constructor() { }
 
-    constructor(private accountService: AccountService) { }
+  ngOnInit(): void {
+  }
+
 }
