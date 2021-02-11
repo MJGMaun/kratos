@@ -1,1 +1,46 @@
-<router-outlet></router-outlet>
+<!-- <mat-sidenav-container>
+  <mat-sidenav>Start</mat-sidenav>
+  <mat-sidenav-content>Main</mat-sidenav-content>
+</mat-sidenav-container>
+
+<nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="account">
+    <div class="navbar-nav">
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-item nav-link">Home</a>
+        <a *ngIf="account.role === Role.Admin" routerLink="/admin" routerLinkActive="active" class="nav-item nav-link">Admin</a>
+        <a (click)="logout()" class="nav-item nav-link">Logout</a>
+    </div>
+</nav>
+
+<router-outlet></router-outlet> -->
+
+<mat-toolbar class="navbar">
+  <div class="_container">
+    <div class="search">
+      <span class="material-icons md-18">search</span>
+    </div>
+
+    <div class="nav-links">
+        <div class="nav-item">
+            <a href="#">Notification</a>
+        </div>
+        <div class="nav-item">
+            <a href="#">Username</a>
+        </div>
+        <div class="nav-item">
+            <a href="#">Picture</a>
+        </div>
+    </div>
+  </div>
+</mat-toolbar>
+
+  <mat-sidenav-container class="example-container">
+    <mat-sidenav #sidenav mode="side" opened class="example-sidenav"
+                 [fixedInViewport]="options.value.fixed" [fixedTopGap]="options.value.top"
+                 [fixedBottomGap]="options.value.bottom">
+    </mat-sidenav>
+
+    <mat-sidenav-content [formGroup]="options">
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
