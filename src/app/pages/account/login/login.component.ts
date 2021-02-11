@@ -48,7 +48,9 @@ export class LoginComponent implements OnInit {
             .subscribe({
                 next: () => {
                     // get return url from query parameters or default to home page
-                    const returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/'; // TODO: redirect to dashboard
+                    const returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/user/dashboard'; // TODO: redirect to dashboard
+                    console.log(returnUrl);
+
                     this.router.navigateByUrl(returnUrl);
                 },
                 error: error => {
