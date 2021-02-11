@@ -21,22 +21,27 @@
 
     <div class="nav-links">
         <div class="nav-item">
-            <a href="#">Notification</a>
+          <a href="#">
+            <span class="material-icons md-18 notif">notifications</span>
+          </a>
         </div>
         <div class="nav-item">
-            <a href="#">Username</a>
+          <a href="#" class="settings">
+            Username<span class="material-icons">keyboard_arrow_down</span>
+          </a>
         </div>
         <div class="nav-item">
-            <a href="#">Picture</a>
+          <a href="#">
+            <img src="../../../assets/images/mytikas-profile.jpg" alt="" class="profile-image">
+          </a>
         </div>
     </div>
   </div>
 </mat-toolbar>
 
   <mat-sidenav-container class="example-container">
-    <mat-sidenav #sidenav mode="side" opened class="example-sidenav"
-                 [fixedInViewport]="options.value.fixed" [fixedTopGap]="options.value.top"
-                 [fixedBottomGap]="options.value.bottom">
+    <mat-sidenav #sidenav mode="side" opened class="example-sidenav" [fixedInViewport]="options.value.fixed" [fixedTopGap]="options.value.top" [fixedBottomGap]="options.value.bottom">
+      <img class="logo" src="../../../assets/images/logo.png" alt="">
     </mat-sidenav>
 
     <mat-sidenav-content [formGroup]="options">

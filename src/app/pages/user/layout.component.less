@@ -13,6 +13,13 @@
   justify-content: center;
   width: 250px;
   border-right: 1px solid #121212;
+
+  img {
+    width: 140px;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+  }
 }
 
 // .example-header {
@@ -46,20 +53,33 @@
         width: 186px;
         position: absolute;
         left: 0;
-        line-height: 92px;
+        line-height: 90px;
         color: #fff;
       }
 
       .nav-links {
         float: right;
-        line-height: 92px;
-        font-weight: 700;
-        text-transform: uppercase;
+        line-height: 90px;
+        font-weight: 500;
           // padding: 0 25px;
 
           .nav-item {
               display: inline-block;
-              margin: 0 20px;
+              margin: 0 10px;
+
+              .notif {
+                border-right: 1px solid #121212;
+                padding-right: 13px;
+              }
+
+              .settings {
+                color: #0e7e56;
+              }
+
+              .profile-image {
+                border-radius: 50%;
+                width: 40px;
+              }
           }
       }
   }
