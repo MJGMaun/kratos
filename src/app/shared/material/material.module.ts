@@ -40,7 +40,9 @@ import { MatTreeModule } from '@angular/material/tree';
 
 @NgModule({
   declarations: [],
-  imports: [CommonModule],
+  imports: [
+    CommonModule
+  ],
   providers: [
     MatDatepickerModule,
     MatExpansionModule,
@@ -50,6 +52,7 @@ import { MatTreeModule } from '@angular/material/tree';
     // }
   ],
   exports: [
+    CommonModule,
     MatCheckboxModule,
     MatCheckboxModule,
     MatButtonModule,

@@ -1,6 +1,8 @@
 #myti {
     background-image: url(../../../../assets/images/myti-bg.png);
-    height: 800px;
+    height: 970px;
+    color: #fff;
+    background-attachment: fixed;
 
     .navbar {
         ._container {
@@ -15,16 +17,104 @@
             .nav-links {
                 float: right;
                 line-height: 92px;
-                font-weight: 700;
+                font-weight: 500;
                 text-transform: uppercase;
                 padding: 0 25px;
 
                 .nav-item {
                     display: inline-block;
-                    margin: 0 20px;
+                    margin: 0 0 0 50px;
+                }
+            }
+        }
+    }
+
+    .myti-content {
+        position: relative;
+        height: 875px;
+
+        ._container {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+
+            ._row {
+    
+                .heading {
+                    flex: 0 0 55%;
+    
+                    h2 {
+                        font-size: 43px;
+                        font-weight: 600;
+                    }
+    
+                    p {
+                        margin: 20px 0 25px;
+                        font-size: 18px;
+                    }
+                }
+    
+                .form-panel {
+                    position: relative;
+                    vertical-align: 200px;
+                    flex: 1;
+                    margin-left: 30px;
+
+                    form {
+                        h3 {
+                            font-size: 30px;
+                            font-weight: 600;
+                        }
+                    }
                 }
             }
         }
     }
 }
+@media (max-width: 1100px) {
+    #myti {
+        .navbar {
+            ._container {
+    
+                .logo {
+
+                }
+    
+                .nav-links {
+                    .nav-item {
+                    }
+                }
+            }
+        }
+    
+        .myti-content {
+            ._container {
+                ._row {
+                    display: unset;
+                    .heading {
+
+                        h2 {
+                            font-size: 35px;
+                        }
+        
+                        p {
+                        }
+                    }
+        
+                    .form-panel {
+                        margin-left: 0;
+                        margin-top: 30px;
+
+                        form {
+                            h3 {
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 

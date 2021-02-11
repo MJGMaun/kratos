@@ -1,29 +1,28 @@
 ﻿import { NgModule, APP_INITIALIZER } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-// import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MaterialModule } from './shared/material/material.module';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 // used to create fake backend
 import { fakeBackendProvider } from './_helpers';
 
-//shared
-import { MaterialModule } from './shared/material/material.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { JwtInterceptor, ErrorInterceptor, appInitializer } from './_helpers';
 import { AccountService } from './_services';
 import { AppComponent } from './app.component';
-import { AlertComponent } from './_components';;
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { AlertComponent } from './_components';
+
 @NgModule({
     imports: [
         BrowserModule,
-        // FormsModule,
-        // ReactiveFormsModule,
-        HttpClientModule,
-        AppRoutingModule
-,
         BrowserAnimationsModule,
+        ReactiveFormsModule,
+        HttpClientModule,
+        FormsModule,
+        AppRoutingModule,
         MaterialModule
     ],
     declarations: [
