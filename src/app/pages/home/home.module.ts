@@ -6,6 +6,9 @@ import { HomeRoutingModule } from './home-routing.module';
 import { LayoutComponent } from './layout.component';
 import { HomeRegisterComponent } from './home-register/home-register.component';
 import { HomeMytiComponent } from './home-myti/home-myti.component';
+import { HomeFeaturesComponent } from './home-features/home-features.component';
+import { HomeMiniParallaxComponent } from './home-mini-parallax/home-mini-parallax.component';
+import { HomePricingComponent } from './home-pricing/home-pricing.component';
 
 
 
@@ -20,6 +23,9 @@ import { HomeMytiComponent } from './home-myti/home-myti.component';
     LayoutComponent,
     HomeRegisterComponent,
     HomeMytiComponent,
+    HomeFeaturesComponent,
+    HomeMiniParallaxComponent,
+    HomePricingComponent,
   ],
   bootstrap: []
 })

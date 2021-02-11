@@ -1,0 +1,74 @@
+#mini-parallax {
+    background-image: url(../../../../assets/images/mini-parallax-bg.png);
+    background-size: cover;
+    background-position: bottom;
+    // background-attachment: fixed;
+    background-position: 50%;
+    background-repeat: no-repeat;
+
+    ._container {
+        width: 1175px;
+        ._row {
+            .heading {
+                width: 500px;
+                margin: 75px 0;
+                flex: 0 0 50%;
+
+                h3 {
+                    font-size: 40px;
+                    font-weight: 600;
+                    color: #00CC83;
+                    line-height: 40px;
+                }
+
+                p {
+                    font-size: 17px;
+                    color: #fff;
+                    line-height: 20px;
+                    margin: 20px 0 0 0;
+                }
+            }
+
+            .aside {
+                flex: 1;
+                text-align: center;
+
+                img {
+                    width: 200px;
+                    margin: 120px 0;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 700px) {
+    #mini-parallax {
+        ._container {
+            ._row {
+                display: inline-block;
+                text-align: center;
+                
+                .heading {
+                    width: 100%;
+                    margin: 50px 0;
+
+                    h3 {
+                        font-size: 35px;
+                    }
+                }
+    
+                .aside {
+                    text-align: center;
+
+                    img {
+                        width: 200px;
+                        margin: 0px 0 50px;
+                    }
+                }
+            }
+        }
+    
+    }
+}
